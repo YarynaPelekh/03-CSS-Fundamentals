@@ -14,7 +14,7 @@
     <h3>The Basic Language of the Web: HTML(body)(h3)</h3>
     <h4>The Basic Language of the Web: HTML(body)(h4)</h4>
 -->
-    <header>
+    <header class="main-header">
       <h1 >📘 The Code Magazine</h1>
 
       <nav style="background: #44373731">
@@ -23,6 +23,7 @@
         <a href="#">Flexbox</a>
         <a href="#">CSS Grid</a>
       </nav>
+      <p>Test descendant paragraph</p>
     </header>
 
     <article>
@@ -34,7 +35,7 @@
           height="50"
           weight="50"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
         <img
           src="img/post-img.jpg"
           alt="HTML code on a screen"
@@ -68,7 +69,7 @@
       </p>
       <p>In HTML, each element is made up of 3 parts:</p>
       <ol>
-        <li>The opening tag</li>
+        <li class="first-li">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -87,7 +88,7 @@
         web. Here are 5 of them:
       </p>
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-li">To be able to use the fundamental web dev language</li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Worpress or Wix
@@ -100,7 +101,7 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related-list">
         <li>
           <img
             src="img/related-1.jpg"
@@ -109,12 +110,12 @@
             alt="Person programming"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schinedtmann</p>
+          <p class="related-author">By Jonas Schinedtmann</p>
         </li>
         <li>
           <img src="img/related-2.jpg" width="75" height="75" alt="Thunder" />
           <a href="#">The Unknown Power of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img
@@ -124,10 +125,11 @@
             alt="Code screen"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
-    <footer>Copyright &copy; 2022 by the Code Magazine.</footer>
+    <footer>
+      <p id="copyright" class="copyright text">Copyright &copy; 2022 by the Code Magazine.</footer></p>
   </body>
 </html>
