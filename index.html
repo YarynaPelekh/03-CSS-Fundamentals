@@ -15,16 +15,17 @@
     <h4>The Basic Language of the Web: HTML(body)(h4)</h4>
 -->
 <div class="container">
-    <header class="main-header">
+    <header class="main-header clearfix">
       <h1 >📘 The Code Magazine</h1>
 
-      <nav style="background: #44373731">
+      <nav>
         <a href="blog.html">Blog</a>
         <a href="#">Challenges</a>
         <a href="#">Flexbox</a>
         <a href="#">CSS Grid</a>
       </nav>
-      <p>Test descendant paragraph</p>
+      <!-- <div class="clear"></div> -->
+      <!-- <p>Test descendant paragraph</p> -->
     </header>
 
     <article>
@@ -35,14 +36,14 @@
           alt="Headshot of Laura Jones"
           height="50"
           weight="50"
+          class="autor-img"
         />
-        <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author" class="autor ">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        lor</p>
         <img
           src="img/post-img.jpg"
           alt="HTML code on a screen"
-          width="500"
-          height="200"
-          class="post-img"
+          class="post-img "
         />
         <button>❤Like</button>
       </header>
